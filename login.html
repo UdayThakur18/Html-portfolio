@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/b4032a5190.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Anime Gallery</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://e1.pxfuel.com/desktop-wallpaper/148/363/desktop-wallpaper-cool-profile-pics-anime-on-jakpost-travel-cool-profile-anime.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+    width: 98%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+}
+ 
+nav a:hover{
+    background-color: #adb9ce;
+    display: block;
+ }
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 110px;
+}
+
+.login-container {
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4565a0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/Uday%20Thakur/Desktop/anime.html">Home</a></li>
+            <li class="dropdown">
+                <a href="https://aniwatch.to/home">Anime</a>
+                <div class="dropdown-content">
+                    <a href="https://aniwatch.to/home">Beginner</a>
+                    <a href="https://ww4.gogoanime2.org/">Intermediate</a>
+                    <a href="https://9animetv.to/">Experienced</a>
+                </div>
+            </li>
+            <li><a href="mailto:udayt724@gmail.com">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form>
+                <i class="fa-solid fa-user"></i>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <i class="fa-solid fa-key"></i>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="button" onclick="redirectToDashboard()">Login</button>
+            </form>
+        </div>
+    </div>
+<script>
+        function redirectToDashboard() {
+            
+            window.location.href = 'anime.html';
+        }
+    </script>
+
+</body>
+</html>
